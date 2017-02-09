@@ -1,0 +1,10 @@
+{
+  "redis": {
+    "host": "cdsp.digitalfunk.io",
+    "port": 6379
+  },
+  "discovery": {
+    "host": "cdsp.digitalfunk.io",
+    "port": 7616
+  }
+}

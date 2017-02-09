@@ -1,0 +1,10 @@
+version: '2'
+services:
+  web:
+    build: .
+    volumes:
+      - .:/code
+    environment:
+      - HOST_IP=${HOST_IP}
+    extra_hosts:
+      - "cdsp.digitalfunk.io:${HOST_IP}"

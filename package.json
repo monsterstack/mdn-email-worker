@@ -1,0 +1,16 @@
+{
+  "name": "mdn-email-worker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "worker.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "config": "^1.25.1",
+    "core-worker": "https://github.com/monsterstack/core-worker#development",
+    "discovery-proxy": "https://github.com/monsterstack/discovery-proxy#development"
+  },
+  "author": "",
+  "license": "ISC"
+}
