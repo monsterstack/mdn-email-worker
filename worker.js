@@ -5,7 +5,8 @@ const Worker = require('core-worker').Worker;
 
 const main = () => {
   console.log('Starting Email Worker');
-  let worker = new Worker("EmailWorker", {
+  let announcement = require('./announcement.json');
+  let worker = new Worker("EmailWorker", announcement, {
     queue: "email",
     redis: {
       host: config.redis.host,
@@ -17,8 +18,8 @@ const main = () => {
   });
 
   worker.init().then(() => {
-    // Query
-    worker.query();
+    // Announce
+    worker.announce();
 
     worker.listen().then(() => {
       worker.on('message', (workLoad) => {

@@ -1,0 +1,8 @@
+{
+  "name": "EmailWorker",
+  "region": "us-east-1",
+  "stage": "dev",
+  "version": "v1",
+  "schemaPath": "http://cloudfront.myschemas.com/worker/email.json",
+  "docsPath": "http://cloudfront.mydocs.com/worker/email"
+}
