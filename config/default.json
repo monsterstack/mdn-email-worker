@@ -6,5 +6,10 @@
   "discovery": {
     "host": "cdsp.digitalfunk.io",
     "port": 7616
+  },
+  "email": {
+    "sendgrid": {
+      "apiKey": "REPLACE_WITH_THE_SECRET"
+    }
   }
 }
