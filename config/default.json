@@ -1,6 +1,6 @@
 {
   "redis": {
-    "host": "cdsp.digitalfunk.io",
+    "host": "redis.digitalfunk.io",
     "port": 6379
   },
   "discovery": {
