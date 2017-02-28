@@ -1,9 +1,9 @@
-version: '2'
+version: '3'
 services:
   worker:
     build: .
     volumes:
-      - .:/code
+      - /code
     environment:
       - HOST_IP=${HOST_IP}
       - REDIS_HOST_IP=${REDIS_HOST_IP}
