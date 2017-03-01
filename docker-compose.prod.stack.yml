@@ -14,8 +14,8 @@ services:
             - CONFIG_HOST=${CONFIG_HOST}
             - CONFIG_PORT=${CONFIG_PORT}
         extra_hosts:
-            - "etcd.digitalfunk.io:${ETCD_HOST_IP}"
             - "redis.digitalfunk.io:${REDIS_HOST_IP}"
+            - "etcd.digitalfunk.io:${ETCD_HOST_IP}"
 networks:
     back-tier:
         external: true
